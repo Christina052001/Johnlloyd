@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Personal Website</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home active">
+        <div class="home-content">
+            <h1>Hi! I am<span> John Lloyd A. Macalalad</span></h1>
+        </div>
+        <img src="462565616_1101392038123756_6870847723091539602_n.jpg" alt="John Lloyd A. Macalalad" class="profile-picture">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 style="margin-left: 225px;">Personal Information</h2>
+        <h3>John Lloyd A. Macalalad</h3>
+        <ul>
+            Age: 21 <br>
+            Gender: Male <br>
+            Birth Date: July 20, 2003 <br>
+            Address: Talumpok West, Batangas City <br>
+            Contact: 09955134091 <br>
+            Email: macalaladjohnlloyd7@gmail.com
+        </ul>
+
+        <hr>
+        <h3>Education</h3>
+        <table style="width:100%">
+            <tr>
+                <th>School</th>
+                <th>Years</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Guinto Elementary School</td>
+                <td>2013-2014</td>
+                <td>Elementary</td>
+            </tr>
+            <tr>
+                <td>Talumpok Integrated School</td>
+                <td>2017-2018</td>
+                <td>High School</td>
+            </tr>
+            <tr>
+                <td>Talumpok Integrated School</td>
+                <td>2018-2020</td>
+                <td>Senior High School</td>
+            </tr>
+            <tr>
+                <td>Westmead International School</td>
+                <td>2023-2024</td>
+                <td>College</td>
+            </tr>
+        </table>
+
+        <hr><hr>
+        <h4>
+            I hereby certify that the above information is true and correct to the best of my knowledge and beliefs.
+        </h4>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+        <h1>Certifications</h1>
+        <div class="cert-img">
+            <img src="certificate1.jpg" alt="Certificate 1">
+            <img src="certificate2.jpg" alt="Certificate 2">
+        </div>
+    </section>
+    <hr><hr>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h1>Projects</h1>
+        <h3>PokeAPI</h3>
+        <button id="getData">Fetch Pokémon</button>
+        <ul id="myList"></ul>
+
+    <div id="Hero"></div>
+    <div id="label"></div>
+    <div id="abilities"></div>
+    <div id="base_experience"></div>
+</section>
+
+
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
