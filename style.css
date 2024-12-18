@@ -97,6 +97,11 @@ body {
     margin-left: 20px;
 }
 
+img{
+    float: right;      
+}
+
+
 /* About Section*/
 .about {
     background-color: #3498db;
@@ -160,16 +165,14 @@ table,th,td {
     background-color: rgb(141, 194, 241);
 }
 
-img{
-    float: right;      
-}
 
 /* Certification Section*/
 
 .certifications {
-    background-color: #9b59b6;
+    background-color: rgb(141, 194, 241);
     padding: 50px;
     color: white;
+    
 }
 .cert-img {
     display: flex;
@@ -187,44 +190,88 @@ img{
 }
 
 /* Projects Section */
-.projects {
-    background-color: #f1c40f;
-    padding: 50px;
-    color: black;
-    text-align: center;
+#projectsBox {
+    position: relative; 
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px; 
+    height: auto;
+    background-color: #2980b9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.projects h1, .projects h3 {
+#projectsBox h1 {
+    font-size: 20px; 
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project {
     margin-bottom: 20px;
 }
 
-#myList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
+.project h3 {
+    font-size: 18px; 
+    margin-bottom: 10px;
+    color: #444;
 }
 
-#myList li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-button {
-    padding: 8px 16px;
-    margin-left: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
+.project input, .project button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    cursor: pointer;
     font-size: 14px;
 }
 
-button:hover {
+.project button {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.project button:hover {
     background-color: #2980b9;
 }
 
-#abilities, #base_experience, #Hero, #label {
-    margin-top: 20px;
+.project button span {
     font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #projectsBox {
+        width: 100%; 
+        max-width: none; 
+        height: auto;
+    }
+
+    .project h3 {
+        font-size: 16px; 
+    }
+
+    .project button {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .project button span {
+        font-size: 16px;
+    }
 }

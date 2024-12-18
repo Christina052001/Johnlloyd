@@ -25,7 +25,7 @@
     <!-- Home Section -->
     <section id="home" class="section home active">
         <div class="home-content">
-            <h1>Hi! I am<span> John Lloyd A. Macalalad</span></h1>
+            <h1 style="color: black;">Hi! I am<span> John Lloyd A. Macalalad</span></h1>
         </div>
         <img src="462565616_1101392038123756_6870847723091539602_n.jpg" alt="John Lloyd A. Macalalad" class="profile-picture">
     </section>
@@ -81,7 +81,7 @@
 
     <!-- Certifications Section -->
     <section id="certifications" class="section certifications">
-        <h1>Certifications</h1>
+        <h1 style="color: black;">Certifications</h1>
         <div class="cert-img">
             <img src="certificate1.jpg" alt="Certificate 1">
             <img src="certificate2.jpg" alt="Certificate 2">
@@ -91,19 +91,40 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section projects">
-        <h1>Projects</h1>
-        <h3>PokeAPI</h3>
-        <button id="getData">Fetch Pokémon</button>
-        <ul id="myList"></ul>
-
-    <div id="Hero"></div>
-    <div id="label"></div>
-    <div id="abilities"></div>
-    <div id="base_experience"></div>
-</section>
-
-
+        <h1>My Projects</h1>
     
+        <!-- Reverse String -->
+        <div class="project">
+            <h3>1. Reverse a String</h3>
+            <input type="text" id="reverseInput" placeholder="Enter a string" />
+            <button onclick="reverseString()">Reverse</button>
+            <p id="reverseResult"></p>
+        </div>
+    
+        <!-- Sum of Integers -->
+        <div class="project">
+            <h3>2. Sum of Integers</h3>
+            <input type="text" id="sumInput" placeholder="Enter numbers separated by commas (e.g., 3,6,9)" />
+            <button onclick="calculateSum()">Calculate Sum</button>
+            <p id="sumResult"></p>
+        </div>
+    
+        <!-- Odd or Even -->
+        <div class="project">
+            <h3>3. Odd or Even</h3>
+            <input type="number" id="oddEvenInput" placeholder="Enter a number" />
+            <button onclick="checkOddOrEven()">Check</button>
+            <p id="oddEvenResult"></p>
+        </div>
+    
+        <!-- Largest Number -->
+        <div class="project">
+            <h3>4. Find the Largest Number</h3>
+            <input type="text" id="largestNumberInput" placeholder="Enter numbers separated by commas (e.g., 20,70,90)" />
+            <button onclick="findLargestNumber()">Find Largest</button>
+            <p id="largestResult"></p>
+        </div>
+    </section>
         
     <script src="script.js"></script>
 </body>
